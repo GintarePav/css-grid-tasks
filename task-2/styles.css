@@ -1,0 +1,213 @@
+.photo-grid {
+    height: 98vh;
+    width: 98vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    justify-content: start;
+    align-items: center;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.photo-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-container:hover::before {
+    content: "";
+    background-color: black;
+    opacity: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.photo-container:hover::after {
+    content: "";
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.one {
+    grid-area: 1/1/2/2;
+}
+
+.one:hover::after {
+    content: "white";
+}
+
+.two {
+    grid-area: 1/2/2/3;
+}
+
+.two:hover::after {
+    content: "red";
+}
+
+.three {
+    grid-area: 2/1/3/3;
+}
+
+.three:hover::after {
+    content: "orange";
+}
+
+.four {
+    grid-area: 3/1/5/3;
+} 
+
+.four:hover::after {
+    content: "pink";
+}
+
+.five {
+    grid-area: 5/1/6/2;
+}
+
+.five:hover::after {
+    content: "yellow";
+}
+
+.six {
+    grid-area: 5/2/6/3;
+}
+
+.six:hover::after {
+    content: "white";
+}
+
+.seven {
+    grid-area: 1/3/2/4;
+}
+
+.seven:hover::after {
+    content: "pink";
+}
+
+.eight {
+    grid-area: 1/4/3/5;
+}
+
+.eight:hover::after {
+    content: "pink";
+}
+
+.nine {
+    grid-area: 2/3/4/4;
+}
+
+.nine:hover::after {
+    content: "pink";
+}
+
+.ten {
+    grid-area: 3/4/4/5;
+}
+
+.ten:hover::after {
+    content: "yellow";
+}
+
+.eleven {
+    grid-area: 4/3/6/5;
+}
+
+.eleven:hover::after {
+    content: "red";
+}
+
+.twelve {
+    grid-area: 1/5/2/6;
+}
+
+.twelve:hover::after {
+    content: "purple";
+}
+
+.thirteen {
+    grid-area: 1/6/2/8;
+}
+
+.thirteen:hover::after {
+    content: "pink";
+}
+
+.fourteen {
+    grid-area: 2/5/4/7;
+}
+
+.fourteen:hover::after {
+    content: "white";
+}
+
+.fifteen {
+    grid-area: 4/5/6/6;
+}
+
+.fifteen:hover::after {
+    content: "white";
+}
+
+.sixteen {
+    grid-area: 4/6/5/7;
+}
+
+.sixteen:hover::after {
+    content: "purple";
+}
+
+.seventeen {
+    grid-area: 5/6/6/7;
+}
+
+.seventeen:hover::after {
+    content: "white";
+}
+
+.eighteen {
+    grid-area: 2/7/3/8;
+}
+
+.eighteen:hover::after {
+    content: "orange";
+}
+
+.nineteen {
+    grid-area: 1/8/3/9;
+}
+
+.nineteen:hover::after {
+    content: "purple";
+}
+
+.twenty {
+    grid-area: 3/7/6/9;
+}
+
+.twenty:hover::after {
+    content: "green";
+}

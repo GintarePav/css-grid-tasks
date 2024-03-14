@@ -1,0 +1,188 @@
+h1, h2 {
+    text-align: center;
+}
+
+.time-column, .stage-row, .talk, .break-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+.empty {
+    grid-area: empty;
+}
+
+.ten {
+    grid-area: ten;
+}
+
+.ten-thirty {
+    grid-area: ten-thirty;
+}
+
+.eleven {
+    grid-area: eleven;
+}
+
+.eleven-thirty {
+    grid-area: eleven-thirty;
+}
+
+
+.eleven-thirty > p, .one > p {
+    background-color: #ffa500;
+    width: 100%;
+    text-align: center;
+}
+
+.twelve {
+    grid-area: twelve;
+}
+
+.twelve-thirty {
+    grid-area: twelve-thirty;
+}
+
+.one {
+    grid-area: one;
+}
+
+.one-thirty {
+    grid-area: one-thirty;
+}
+
+.two {
+    grid-area: two;
+}
+
+.two-thirty {
+    grid-area: two-thirty;
+}
+
+.stage-one {
+    grid-area: stage-one;
+}
+
+.stage-two {
+    grid-area: stage-two;
+}
+
+.stage-three {
+    grid-area: stage-three;
+}
+
+.stage-four {
+    grid-area: stage-four;
+}
+
+.stage-five {
+    grid-area: stage-five;
+}
+
+.stage-six {
+    grid-area: stage-six;
+}
+
+.stage-seven {
+    grid-area: stage-seven;
+}
+
+.talk-blue {
+    background-color: #a9caf0;
+    color: #406086;
+    font-weight: bold;
+}
+
+.talk-green {
+    background-color: #a9f0c9;
+    color: #518368;
+    font-weight: bold;
+}
+
+.talk-red {
+    background-color: #f5b5b5;
+    color: #9d3030;
+    font-weight: bold;
+}
+
+.talk-yellow {
+    background-color: #f0f093;
+    color: #dea218;
+    font-weight: bold;
+}
+
+.talk-one {
+    grid-area: talk-one;
+}
+
+.talk-two-three {
+    grid-area: talk-two-three;
+}
+
+.talk-four {
+    grid-area: talk-four;
+}
+
+.talk-five {
+    grid-area: talk-five;
+}
+
+.talk-six {
+    grid-area: talk-six;
+}
+
+.talk-seven {
+    grid-area: talk-seven;
+}
+
+.talk-eight {
+    grid-area: talk-eight;
+}
+
+.talk-nine {
+    grid-area: talk-nine;
+}
+
+.talk-ten {
+    grid-area: talk-ten;
+}
+
+.break-one {
+    grid-area: break-one;
+    font-weight: bold;
+}
+
+.break-two {
+    grid-area: break-two;
+    font-weight: bold;
+}
+
+.break-three {
+    grid-area: break-three;
+    font-weight: bold;
+}
+
+.calendar-container {
+    margin: auto;
+    height: 50vh;
+    width: 50vw;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 0.5fr repeat(7, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-areas: 
+    "empty stage-one stage-two stage-three stage-four stage-five stage-six stage-seven"
+    "ten talk-one talk-one talk-four talk-five talk-five talk-nine talk-nine"
+    "ten-thirty talk-one talk-one talk-four break-two break-two talk-nine talk-nine"
+    "eleven talk-one talk-one talk-four talk-six talk-six talk-nine talk-nine"
+    "eleven-thirty break-one break-one talk-four talk-six talk-six talk-nine talk-nine"
+    "twelve talk-two-three talk-two-three talk-two-three talk-six talk-six talk-nine talk-nine"
+    "twelve-thirty talk-two-three talk-two-three talk-two-three talk-six talk-six talk-nine talk-nine"
+    "one break-three break-three break-three break-three break-three break-three break-three"
+    "one-thirty talk-seven talk-seven . . . talk-ten talk-ten"
+    "two talk-seven talk-seven talk-eight talk-eight talk-eight talk-ten talk-ten"
+    "two-thirty talk-seven talk-seven talk-eight talk-eight talk-eight talk-ten talk-ten"
+}
